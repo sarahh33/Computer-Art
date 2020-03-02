@@ -1,0 +1,19 @@
+function setup() {
+  createCanvas(400, 400);
+  fill(200, 200,0);
+  ellipse(200, 200, 200, 20);
+  background(230);//背景色不会影响mouse
+}
+
+function draw() {
+  //  background(230);背景色会遮盖动态效果，因为被无数次运行
+  fill(255, 100);
+  ellipse(mouseX, mouseY, 100, 100);
+  fill(255,20);
+  ellipse(200, 100, 20, 20);
+  fill(255);
+  rect(100, 100, 100, 100);
+  fill(255, 100, 200);
+  ellipse(200, 300, 100);
+  
+}
